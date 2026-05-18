@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      background: #e0f7fa;
       color: #333;
     }
 
@@ -24,10 +24,8 @@
       top: 0;
       z-index: 1000;
     }
-    header h1 {
-      margin: 0;
-      font-size: 1.8em;
-      letter-spacing: 1px;
+    header img {
+      height: 50px;
     }
     nav a {
       color: white;
@@ -42,15 +40,14 @@
 
     /* Hero Section */
     .hero {
-      background: linear-gradient(to bottom, #00b4d8, #90e0ef);
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
       position: relative;
+      text-align: center;
+      padding: 100px 20px 60px;
+      color: white;
       overflow: hidden;
     }
     .hero h2 {
-      font-size: 2.5em;
+      font-size: 2.8em;
       margin-bottom: 20px;
       animation: fadeIn 2s ease-in-out;
     }
@@ -60,7 +57,7 @@
       gap: 20px;
     }
     .btn {
-      background: #0077b6;
+      background: #28a745; /* green */
       color: white;
       padding: 12px 25px;
       border-radius: 30px;
@@ -69,7 +66,22 @@
       transition: 0.3s;
     }
     .btn:hover {
-      background: #023e8a;
+      background: #218838;
+    }
+
+    /* Water Wave Background */
+    .wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 200%;
+      height: 100px;
+      background: url('https://svgshare.com/i/u9U.svg') repeat-x;
+      animation: wave 10s linear infinite;
+    }
+    @keyframes wave {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
     }
 
     /* About Section */
@@ -85,6 +97,12 @@
       max-width: 600px;
       margin: 20px auto;
       font-size: 1.1em;
+    }
+    .about img {
+      width: 250px;
+      margin: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
     /* Services */
@@ -112,6 +130,10 @@
     }
     .card:hover {
       transform: translateY(-10px);
+    }
+    .card img {
+      height: 60px;
+      margin-bottom: 15px;
     }
 
     /* Contact */
@@ -174,7 +196,7 @@
       gap: 10px;
     }
     .floating-buttons a {
-      background: #0077b6;
+      background: #28a745; /* green */
       color: white;
       padding: 10px 15px;
       border-radius: 50px;
@@ -184,14 +206,14 @@
       transition: 0.3s;
     }
     .floating-buttons a:hover {
-      background: #023e8a;
+      background: #218838;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Agastya RO Service</h1>
+    <img src="logo.png" alt="Agastya RO Service Logo" />
     <nav>
       <a href="#home">Home</a>
       <a href="#services">Services</a>
@@ -203,32 +225,40 @@
   <section class="hero" id="home">
     <h2>Pure Water • Pure Life</h2>
     <div class="buttons">
-      <a href="tel:8815942068" class="btn">Call: 8815942068</a>
-      <a href="https://wa.me/9111858929" class="btn">WhatsApp: 9111858929</a>
+      <a href="tel:8815942068" class="btn">📞 Call: 8815942068</a>
+      <a href="https://wa.me/9111858929" class="btn">💬 WhatsApp: 9111858929</a>
     </div>
+    <div class="wave"></div>
   </section>
 
   <section class="about" id="about">
     <h3>About Us</h3>
     <p>We are a private service center. We are not attached to any brand.</p>
+    <img src="about1.jpg" alt="Technician working" />
+    <img src="about2.jpg" alt="Service image" />
+    <img src="about3.jpg" alt="RO system" />
   </section>
 
   <section class="services" id="services">
     <h3>Our Services</h3>
     <div class="service-grid">
       <div class="card">
+        <img src="install.png" alt="Installation Icon" />
         <h4>Installation</h4>
         <p>Professional RO Installation for homes and offices.</p>
       </div>
       <div class="card">
+        <img src="repair.png" alt="Repair Icon" />
         <h4>RO Repair</h4>
         <p>Expert RO Repair Services with quick response.</p>
       </div>
       <div class="card">
+        <img src="filter.png" alt="Filter Icon" />
         <h4>Filter Replacement</h4>
         <p>Filter Change & Replacement for all RO models.</p>
       </div>
       <div class="card">
+        <img src="maintenance.png" alt="Maintenance Icon" />
         <h4>Maintenance</h4>
         <p>Regular RO Maintenance for pure and safe water.</p>
       </div>
@@ -240,20 +270,4 @@
     <p>Adhartal, in front of Adhartal Police Station, 482004</p>
     <form>
       <input type="text" placeholder="Name" required />
-      <input type="tel" placeholder="Phone" required />
-      <textarea placeholder="Message" rows="4"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>© 2026 Agastya RO Service | We are an independent private service center, not affiliated with any brand.</p>
-  </footer>
-
-  <div class="floating-buttons">
-    <a href="tel:8815942068">📞 Call</a>
-    <a href="https://wa.me/9111858929">💬 WhatsApp</a>
-  </div>
-
-</body>
-</html>
+      <input type="tel" placeholder="Phone
