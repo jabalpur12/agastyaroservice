@@ -3,122 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Agastya RO Service Jabalpur</title>
-<meta name="description" content="RO Service in Jabalpur Adhartal. Repair, Installation, Filter Change. Fast doorstep service.">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<title>Agastya RO Service</title>
 
 <style>
-body{
-  margin:0;
-  font-family:'Poppins',sans-serif;
-  background:#f7fbff;
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f5f7fa;
 }
 
-/* HEADER */
-header{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:15px 30px;
-  background:#fff;
-  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+header {
+    background:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
-header img{
-  height:50px;
+.logo {
+    font-size:22px;
+    font-weight:bold;
+    color:#0077ff;
 }
 
-nav a{
-  margin:0 10px;
-  text-decoration:none;
-  color:#003366;
-  font-weight:500;
+nav a {
+    margin:0 15px;
+    text-decoration:none;
+    color:#333;
 }
 
-/* HERO */
-.hero{
-  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-  url('https://images.unsplash.com/photo-1626808642875-0aa545482dfb') center/cover;
-  color:#fff;
-  text-align:center;
-  padding:100px 20px;
+.hero {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px;
+    background:white;
 }
 
-.hero h1{
-  font-size:40px;
+.hero-text h1 {
+    font-size:42px;
+    margin-bottom:15px;
 }
 
-.btn{
-  background:#00aaff;
-  color:#fff;
-  padding:12px 25px;
-  margin:10px;
-  text-decoration:none;
-  border-radius:5px;
+.hero-text p {
+    color:#555;
+    margin-bottom:20px;
 }
 
-/* SECTION */
-.section{
-  padding:60px 20px;
-  text-align:center;
+.btn {
+    background:#0077ff;
+    color:white;
+    padding:12px 20px;
+    border-radius:6px;
+    text-decoration:none;
 }
 
-.services{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
+.hero img {
+    width:45%;
+    border-radius:10px;
 }
 
-.card{
-  background:#fff;
-  width:250px;
-  margin:15px;
-  padding:25px;
-  border-radius:10px;
-  box-shadow:0 0 10px rgba(0,0,0,0.1);
+.section {
+    padding:60px;
+    text-align:center;
 }
 
-/* IMAGE SECTION */
-.img-section{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
+.cards {
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
 }
 
-.img-section img{
-  width:300px;
-  margin:10px;
-  border-radius:10px;
+.card {
+    background:white;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
 }
 
-/* REVIEWS */
-.review{
-  max-width:600px;
-  margin:20px auto;
-  background:#fff;
-  padding:20px;
-  border-radius:10px;
+.gallery img {
+    width:300px;
+    border-radius:10px;
+    margin:10px;
 }
 
-/* FOOTER */
-footer{
-  background:#003366;
-  color:#fff;
-  text-align:center;
-  padding:20px;
-}
-
-/* FLOAT */
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:green;
-  color:#fff;
-  padding:15px;
-  border-radius:50%;
+footer {
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 </style>
 </head>
@@ -126,7 +102,7 @@ footer{
 <body>
 
 <header>
-<img src="YOUR_LOGO_HERE.png">
+<div class="logo">Agastya RO</div>
 <nav>
 <a href="#">Home</a>
 <a href="#">Services</a>
@@ -134,62 +110,49 @@ footer{
 </nav>
 </header>
 
-<div class="hero">
-<h1>RO Service in Jabalpur</h1>
-<p>Clean Water Healthy Life</p>
-
-<a class="btn" href="tel:8815942068">Call Now</a>
-<a class="btn" href="https://wa.me/919111858929">WhatsApp</a>
+<section class="hero">
+<div class="hero-text">
+<h1>Clean Water, Healthy Life</h1>
+<p>Professional RO repair & installation service at your doorstep.</p>
+<a href="tel:XXXXXXXXXX" class="btn">Call Now</a>
 </div>
 
-<div class="section">
+<img src="hero.jpg">
+</section>
+
+<section class="section">
 <h2>Our Services</h2>
-<div class="services">
-<div class="card">RO Installation</div>
-<div class="card">RO Repair</div>
-<div class="card">RO Service</div>
-<div class="card">Filter Change</div>
-<div class="card">AMC Plans</div>
-</div>
+
+<div class="cards">
+<div class="card">
+<h3>RO Repair</h3>
+<p>Quick and reliable repair service.</p>
 </div>
 
-<div class="section">
-<h2>Our Work</h2>
-<div class="img-section">
-<img src="https://images.unsplash.com/photo-1581091215367-59ab6b3b0d3c">
-<img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
-<img src="https://images.unsplash.com/photo-1626808642875-0aa545482dfb">
-</div>
+<div class="card">
+<h3>Installation</h3>
+<p>Expert installation at home.</p>
 </div>
 
-<div class="section">
-<h2>Customer Reviews</h2>
-<div class="review">⭐️⭐️⭐️⭐️⭐️ Fast and professional service</div>
-<div class="review">⭐️⭐️⭐️⭐️⭐️ Affordable and trusted</div>
-<div class="review">⭐️⭐️⭐️⭐️⭐️ Best in Adhartal</div>
+<div class="card">
+<h3>Maintenance</h3>
+<p>Regular servicing & filter change.</p>
 </div>
+</div>
+</section>
 
-<div class="section">
-<h2>About Us</h2>
-<p>
-We are a private RO service provider in Jabalpur.  
-We are not associated with any brand.  
-We provide independent repair and service for all water purifiers.
-</p>
-</div>
+<section class="section">
+<h2>Before / After Work</h2>
 
-<div class="section">
-<h2>Contact</h2>
-<p>Adhartal, In front of police station</p>
-<p>📞 8815942068</p>
-<p>📧 agastyaroservice@gmail.com</p>
+<div class="gallery">
+<img src="before.jpg">
+<img src="after.jpg">
 </div>
+</section>
 
 <footer>
-<p>© Agastya RO Service Jabalpur</p>
+<p>© 2026 Agastya RO Service | All Rights Reserved</p>
 </footer>
-
-<a class="whatsapp" href="https://wa.me/919111858929">Chat</a>
 
 </body>
 </html>
